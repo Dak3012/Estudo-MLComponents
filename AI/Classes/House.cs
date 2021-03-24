@@ -9,6 +9,7 @@ namespace AI.Classes
     public class House
     {
         public float Size { get; set; }
+        [ColumnName("Label")]
         public float Price { get; set; }
         public float Comodos { get; set; }
     }

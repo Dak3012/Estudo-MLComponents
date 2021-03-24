@@ -19,8 +19,7 @@ namespace AI.Classes
             var context = new MLContext();
             var TestData = context.Data.LoadFromEnumerable(Data);
             var test = Context.Transform(TestData);
-            var cds = context.Regression.CrossValidate(test,context.Regression.Trainers.Sdca(labelColumnName: "Price"), numberOfFolds: 5, labelColumnName: "Price"); //fazer validação cruzada a parte
-            var testModel = context.Regression.Evaluate(test, labelColumnName: "Price");
+            var testModel = context.Regression.Evaluate(test);
             return testModel;
         }
         public AIClass(ITransformer model)
@@ -31,7 +30,7 @@ namespace AI.Classes
         {
             var context = new MLContext();
             var TrainingData = context.Data.LoadFromEnumerable(Data);
-            var sdaEstimator = context.Regression.Trainers.Sdca(labelColumnName: "Price");
+            var sdaEstimator = context.Regression.Trainers.LbfgsPoissonRegression();
             var pipeline = context.Transforms.Concatenate("Features", new[] { "Size", "Comodos" }).Append(sdaEstimator).Append(context.Transforms.NormalizeMinMax("Features")); 
             var model = pipeline.Fit(TrainingData);
             Context = model;
