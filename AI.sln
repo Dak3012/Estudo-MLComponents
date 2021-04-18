@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AI", "AI\AI.csproj", "{6EC34E54-BA72-4218-81AD-12F17BAB0B6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AITeste", "AITeste\AITeste.csproj", "{2277815D-DEEE-41D6-8B25-4B7F4E751442}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AITeste", "AITeste\AITeste.csproj", "{2277815D-DEEE-41D6-8B25-4B7F4E751442}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
