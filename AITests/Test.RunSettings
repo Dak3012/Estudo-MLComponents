@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RunSettings >
+  <RunConfiguration>
+    <EnvironmentVariables>
+      <!-- List of environment variables we want to set as element and its value-->
+      <ASPNETCORE_ENVIRONMENT>Test</ASPNETCORE_ENVIRONMENT>
+      <Location>D:\\apps\\IADocs\\</Location>
+    </EnvironmentVariables>
+  </RunConfiguration>
+</RunSettings>
